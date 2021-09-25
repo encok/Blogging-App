@@ -1,3 +1,11 @@
+<style>
+.container-fluid{
+background-color: brown;
+color: black;
+font-weight: 600;
+}
+</style>
+
 <div class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -13,7 +21,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 {% if current_user.is_authenticated %}
-                <li><a href="{{url_for('main.upload_blog',uname=current_user.username)}}">Upload Blog</a></li>
+                <li><a href="{{url_for('main.upload_blog',uname=current_user.username)}}">Post Blog</a></li>
                 {%endif%}
             </ul>
             </div>
@@ -24,7 +32,7 @@
             <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
             <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
             {% else %}
-            <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
+            <li><a href="{{url_for('auth.login')}}">Log in</a></li>
             {%endif%}
           </ul>
     </div>
