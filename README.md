@@ -11,15 +11,14 @@ https://github.com/encok/Blogging-App
 
 
 ## Description
-  This is an application that allows a user to write and post a blog. The visitors of the site can view the blogs and comment on them. However, the user is supposed to sign up and then login first in order to write or comment on  the posted blogs.
+  This is an application that allows a user to write and post a blog. The visitors of the site can view the blogs and comment on them. However, the user is supposed to sign up and then login first in order to write or comment on  the posted blogs. You can view your comment that you posted.
   
 
 
 ## Screenshots
 <img src="app/static/images/1.png">
 <img src="app/static/images/2.png">
-<img src="app/static/images/3.png">
-<img src="app/static/images/4.png">
+
 
 ## Installation Requirements
   Clone this repository and navigate to the folder.
