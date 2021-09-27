@@ -41,15 +41,20 @@
         </div>
 
     </div>
+
     {% endmacro %}
-
-
-    {% macro displayComments(comments_list)%}
-    {% for comment in comments_list %}
-    <p> {{comment.comment}} </p>
-    <p>posted by: {{comment.users}}</p>
-    {{comment.posted.strftime('%Y-%m-%d')}} <br>
-
+    <style>
+        .comms{
+            margin: 30px;
+        }
+    </style>
+   <div class="comms">
+            {% macro displayComments(comments_list)%}
+            {% for comment in comments_list %}
+            <p> {{comment.comment}} </p>
+            <p>posted by: {{comment.users}}</p>
+            {{comment.posted.strftime('%Y-%m-%d')}} <br>
+   </div>
     {%endfor %}
 
     {% endmacro %}
