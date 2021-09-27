@@ -33,11 +33,12 @@ https://github.com/encok/Blogging-App
   * pip install -r requirements.txt
 
 ## User Stories
-  * A user can see the pitches posted by other people
-  * A user can eithr downvote or upvote on a pitch as long as they are signed in.
-  * A user can add comment on the different pitches .
-  * A user can view and submit pitches by category.
-
+* A user can view the blog posts on the site
+* A user can comment on blog posts
+* A user can view the most recent posts
+* A user can see random quotes on the site
+* A user is able to sign in to the blog.
+* A user is also able create a blog from the application.
 ## Technologies Used
   * Python 3.8
   * HTML5, CSS and Bootstrap
