@@ -2,10 +2,16 @@
 {% import 'bootstrap/wtf.html' as wtf%}
 {%import 'macros.html' as macro %}
 
-
+<style>
+    .comment{
+        margin: 30px;
+    }
+</style>
+<div class="comment">
 {% block content%}
     <h2>{{blog}}</h2>
     {{macro.displayComments(all_comments)}}
     {{wtf.quick_form(comment_form)}}
 
 {% endblock %}
+</div>
