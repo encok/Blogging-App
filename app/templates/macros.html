@@ -49,15 +49,15 @@
             background-color: whitesmoke;
         }
     </style>
-   <div class="comms">
+   <div class="comms" style="margin: 40px;">
             {% macro displayComments(comments_list)%}
             {% for comment in comments_list %}
             <p> {{comment.comment}} </p>
             <p>posted by: {{comment.users}}</p>
             {{comment.posted.strftime('%Y-%m-%d')}} <br>
-   </div>
+   
     {%endfor %}
-
+</div>
     {% endmacro %}
 
 
