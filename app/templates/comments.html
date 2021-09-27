@@ -8,11 +8,11 @@
         background-color: darkgrey;
     }
 </style>
-<div class="comment">
+
 {% block content%}
+<div class="comment"></div>
     <h2>{{blog}}</h2>
     {{macro.displayComments(all_comments)}}
     {{wtf.quick_form(comment_form)}}
-
-{% endblock %}
 </div>
+{% endblock %}
